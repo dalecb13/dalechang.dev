@@ -1,101 +1,90 @@
-import Image, { type ImageProps } from "next/image";
-import { Button } from "@repo/ui/button";
+import Link from "next/link";
 import styles from "./page.module.css";
-
-type Props = Omit<ImageProps, "src"> & {
-  srcLight: string;
-  srcDark: string;
-};
-
-const ThemeImage = (props: Props) => {
-  const { srcLight, srcDark, ...rest } = props;
-
-  return (
-    <>
-      <Image {...rest} src={srcLight} className="imgLight" />
-      <Image {...rest} src={srcDark} className="imgDark" />
-    </>
-  );
-};
 
 export default function Home() {
   return (
     <div className={styles.page}>
-      <main className={styles.main}>
-        <ThemeImage
-          className={styles.logo}
-          srcLight="turborepo-dark.svg"
-          srcDark="turborepo-light.svg"
-          alt="Turborepo logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>apps/web/app/page.tsx</code>
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new/clone?demo-description=Learn+to+implement+a+monorepo+with+a+two+Next.js+sites+that+has+installed+three+local+packages.&demo-image=%2F%2Fimages.ctfassets.net%2Fe5382hct74si%2F4K8ZISWAzJ8X1504ca0zmC%2F0b21a1c6246add355e55816278ef54bc%2FBasic.png&demo-title=Monorepo+with+Turborepo&demo-url=https%3A%2F%2Fexamples-basic-web.vercel.sh%2F&from=templates&project-name=Monorepo+with+Turborepo&repository-name=monorepo-turborepo&repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fturborepo%2Ftree%2Fmain%2Fexamples%2Fbasic&root-directory=apps%2Fdocs&skippable-integrations=1&teamSlug=vercel&utm_source=create-turbo"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://turborepo.com/docs?utm_source"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+      {/* Decorative background elements */}
+      <div className={styles.bgGrid} />
+      <div className={styles.bgGradient} />
+      
+      {/* Navigation */}
+      <nav className={styles.nav}>
+        <span className={styles.navLogo}>dc.</span>
+        <div className={styles.navLinks}>
+          <Link href="/work">Work</Link>
+          <Link href="/projects">Projects</Link>
+          <a href="mailto:hello@dalechang.dev" className={styles.navCta}>Let&apos;s chat</a>
         </div>
-        <Button appName="web" className={styles.secondary}>
-          Open alert
-        </Button>
+      </nav>
+
+      {/* Hero Section */}
+      <main className={styles.hero}>
+        <div className={styles.heroContent}>
+          <p className={styles.heroLabel}>
+            <span className={styles.statusDot} />
+            Available for opportunities
+          </p>
+          
+          <h1 className={styles.heroTitle}>
+            I build products
+            <br />
+            <span className={styles.heroAccent}>people actually use.</span>
+          </h1>
+          
+          <p className={styles.heroSub}>
+            Software engineer with a founder&apos;s mindset. I care about users, 
+            not just code. Currently crafting delightful experiences and 
+            shipping things that matter.
+          </p>
+
+          <div className={styles.heroCtas}>
+            <a href="mailto:hello@dalechang.dev" className={styles.primaryBtn}>
+              Let&apos;s chat
+              <span className={styles.btnArrow}>→</span>
+            </a>
+            <Link href="/work" className={styles.secondaryBtn}>
+              See my work
+            </Link>
+          </div>
+        </div>
+
+        <div className={styles.heroVisual}>
+          <div className={styles.floatingCard}>
+            <span className={styles.cardEmoji}>🚀</span>
+            <span>Shipped 12+ products</span>
+          </div>
+          <div className={styles.floatingCard} style={{ animationDelay: '0.5s' }}>
+            <span className={styles.cardEmoji}>💡</span>
+            <span>Product-first thinking</span>
+          </div>
+          <div className={styles.floatingCard} style={{ animationDelay: '1s' }}>
+            <span className={styles.cardEmoji}>⚡</span>
+            <span>0 → 1 builder</span>
+          </div>
+        </div>
       </main>
+
+      {/* Social proof / quick links */}
+      <section className={styles.socialProof}>
+        <p className={styles.proofLabel}>Previously shipped at</p>
+        <div className={styles.proofLogos}>
+          <span>Company A</span>
+          <span>•</span>
+          <span>Company B</span>
+          <span>•</span>
+          <span>Company C</span>
+        </div>
+      </section>
+
+      {/* Footer */}
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com/templates?search=turborepo&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://turborepo.com?utm_source=create-turbo"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to turborepo.com →
-        </a>
+        <div className={styles.footerLinks}>
+          <a href="https://github.com/dalechang" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://linkedin.com/in/dalechang" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://twitter.com/dalechang" target="_blank" rel="noopener noreferrer">Twitter</a>
+        </div>
+        <p className={styles.footerNote}>Built with care & caffeine ☕</p>
       </footer>
     </div>
   );

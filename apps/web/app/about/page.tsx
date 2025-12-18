@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function About() {
@@ -17,7 +18,16 @@ export default function About() {
 
       <main className={styles.main}>
         <div className={styles.content}>
-          <div className={styles.avatar}>👋</div>
+          <div className={styles.avatarWrapper}>
+            <Image
+              src="/dale-headshot.jpg"
+              alt="Dale Chang"
+              width={200}
+              height={200}
+              className={styles.avatar}
+              priority
+            />
+          </div>
           
           <h1 className={styles.title}>Hey, I&apos;m Dale.</h1>
           

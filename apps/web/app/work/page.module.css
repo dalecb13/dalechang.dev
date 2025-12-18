@@ -222,30 +222,154 @@
 /* Responsive */
 @media (max-width: 768px) {
   .nav {
-    padding: 20px 24px;
+    padding: 16px 20px;
+    flex-wrap: wrap;
+  }
+  
+  .navLogo {
+    font-size: 20px;
   }
   
   .navLinks {
-    gap: 16px;
+    gap: 12px;
+    font-size: 13px;
+  }
+  
+  .navCta {
+    padding: 8px 16px;
+    font-size: 13px;
   }
   
   .main {
-    padding: 40px 24px;
+    padding: 32px 20px;
+  }
+  
+  .header {
+    margin-bottom: 40px;
+  }
+  
+  .title {
+    font-size: clamp(28px, 8vw, 36px);
+  }
+  
+  .subtitle {
+    font-size: 15px;
   }
   
   .card {
-    padding: 24px;
+    padding: 20px;
   }
   
   .cardHeader {
     flex-direction: column;
     gap: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+  }
+  
+  .company {
+    font-size: 20px;
+  }
+  
+  .role {
+    font-size: 13px;
+  }
+  
+  .period {
+    font-size: 12px;
+    padding: 5px 10px;
+    align-self: flex-start;
+  }
+  
+  .cardBody {
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .section p {
+    font-size: 14px;
+  }
+  
+  .label {
+    font-size: 10px;
+  }
+  
+  .tag {
+    font-size: 11px;
+    padding: 5px 12px;
   }
   
   .footer {
     flex-direction: column;
     gap: 16px;
-    padding: 32px 24px;
+    padding: 32px 20px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    padding: 16px;
+  }
+  
+  .navLinks {
+    gap: 10px;
+    font-size: 12px;
+  }
+  
+  .navCta {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+  
+  .main {
+    padding: 24px 16px;
+  }
+  
+  .header {
+    margin-bottom: 32px;
+  }
+  
+  .title {
+    font-size: clamp(24px, 10vw, 28px);
+    margin-bottom: 12px;
+  }
+  
+  .subtitle {
+    font-size: 14px;
+  }
+  
+  .experiences {
+    gap: 24px;
+  }
+  
+  .card {
+    padding: 16px;
+  }
+  
+  .cardHeader {
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+  }
+  
+  .company {
+    font-size: 18px;
+  }
+  
+  .cardBody {
+    gap: 14px;
+    margin-bottom: 16px;
+  }
+  
+  .section p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+  
+  .footer {
+    padding: 24px 16px;
+    font-size: 14px;
+    text-align: center;
   }
 }
 

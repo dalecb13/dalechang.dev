@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -50,6 +51,16 @@ export default function Home() {
         </div>
 
         <div className={styles.heroVisual}>
+          <div className={styles.profileImageWrapper}>
+            <Image
+              src="/dale-headshot.jpg"
+              alt="Dale Chang"
+              width={400}
+              height={400}
+              className={styles.profileImage}
+              priority
+            />
+          </div>
           <div className={styles.floatingCard}>
             <span className={styles.cardEmoji}>🚀</span>
             <span>Shipped 12+ products</span>

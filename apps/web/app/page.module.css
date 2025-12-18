@@ -201,6 +201,24 @@
   animation: slideUp 1s ease-out;
 }
 
+.profileImageWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid var(--card-border);
+  background: var(--card-bg);
+}
+
+.profileImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
 .floatingCard {
   display: inline-flex;
   align-items: center;
@@ -215,11 +233,11 @@
   width: fit-content;
 }
 
-.floatingCard:nth-child(2) {
+.floatingCard:nth-child(3) {
   margin-left: 40px;
 }
 
-.floatingCard:nth-child(3) {
+.floatingCard:nth-child(4) {
   margin-left: 20px;
 }
 
@@ -303,30 +321,152 @@
   }
   
   .floatingCard:nth-child(2),
-  .floatingCard:nth-child(3) {
+  .floatingCard:nth-child(3),
+  .floatingCard:nth-child(4) {
     margin-left: 0;
   }
   
+  .profileImageWrapper {
+    max-width: 100%;
+    margin-bottom: 16px;
+  }
+  
   .nav {
-    padding: 20px 24px;
+    padding: 16px 20px;
+    flex-wrap: wrap;
   }
   
   .navLinks {
-    gap: 16px;
+    gap: 12px;
+    font-size: 13px;
+  }
+  
+  .navCta {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+  
+  .heroTitle {
+    font-size: clamp(32px, 8vw, 48px);
+  }
+  
+  .heroSub {
+    font-size: 15px;
   }
   
   .heroCtas {
     flex-direction: column;
+    width: 100%;
+  }
+  
+  .primaryBtn,
+  .secondaryBtn {
+    width: 100%;
+    justify-content: center;
   }
   
   .footer {
     flex-direction: column;
     gap: 16px;
     text-align: center;
-    padding: 24px;
+    padding: 24px 20px;
+  }
+  
+  .footerLinks {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
   }
   
   .socialProof {
-    padding: 32px 24px;
+    padding: 32px 20px;
+  }
+  
+  .proofLogos {
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    padding: 16px;
+  }
+  
+  .navLogo {
+    font-size: 20px;
+  }
+  
+  .navLinks {
+    gap: 10px;
+    font-size: 12px;
+  }
+  
+  .navCta {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+  
+  .hero {
+    padding: 24px 16px;
+    gap: 32px;
+  }
+  
+  .heroLabel {
+    font-size: 11px;
+    margin-bottom: 16px;
+  }
+  
+  .heroTitle {
+    font-size: clamp(28px, 10vw, 36px);
+    margin-bottom: 16px;
+  }
+  
+  .heroSub {
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
+  
+  .primaryBtn,
+  .secondaryBtn {
+    padding: 14px 24px;
+    font-size: 14px;
+  }
+  
+  .floatingCard {
+    padding: 16px 20px;
+    font-size: 13px;
+  }
+  
+  .cardEmoji {
+    font-size: 20px;
+  }
+  
+  .socialProof {
+    padding: 24px 16px;
+  }
+  
+  .proofLabel {
+    font-size: 11px;
+    margin-bottom: 12px;
+  }
+  
+  .proofLogos {
+    font-size: 12px;
+    gap: 8px;
+  }
+  
+  .footer {
+    padding: 20px 16px;
+  }
+  
+  .footerLinks {
+    font-size: 13px;
+    gap: 12px;
+  }
+  
+  .footerNote {
+    font-size: 12px;
   }
 }

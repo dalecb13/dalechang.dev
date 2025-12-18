@@ -220,25 +220,162 @@
 /* Responsive */
 @media (max-width: 768px) {
   .nav {
-    padding: 20px 24px;
+    padding: 16px 20px;
+    flex-wrap: wrap;
+  }
+  
+  .navLogo {
+    font-size: 20px;
   }
   
   .navLinks {
-    gap: 16px;
+    gap: 12px;
+    font-size: 13px;
+  }
+  
+  .navCta {
+    padding: 8px 16px;
+    font-size: 13px;
   }
   
   .main {
-    padding: 40px 24px;
+    padding: 32px 20px;
+  }
+  
+  .header {
+    margin-bottom: 40px;
+  }
+  
+  .title {
+    font-size: clamp(28px, 8vw, 36px);
+  }
+  
+  .subtitle {
+    font-size: 15px;
   }
   
   .grid {
     grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .card {
+    padding: 20px;
+  }
+  
+  .emoji {
+    font-size: 32px;
+  }
+  
+  .projectTitle {
+    font-size: 20px;
+  }
+  
+  .projectDesc {
+    font-size: 13px;
+  }
+  
+  .why {
+    font-size: 12px;
+    padding: 10px;
+  }
+  
+  .techTag {
+    font-size: 10px;
+    padding: 4px 10px;
+  }
+  
+  .viewLink {
+    font-size: 13px;
   }
   
   .footer {
     flex-direction: column;
     gap: 16px;
-    padding: 32px 24px;
+    padding: 32px 20px;
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    padding: 16px;
+  }
+  
+  .navLinks {
+    gap: 10px;
+    font-size: 12px;
+  }
+  
+  .navCta {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+  
+  .main {
+    padding: 24px 16px;
+  }
+  
+  .header {
+    margin-bottom: 32px;
+  }
+  
+  .title {
+    font-size: clamp(24px, 10vw, 28px);
+    margin-bottom: 12px;
+  }
+  
+  .subtitle {
+    font-size: 14px;
+  }
+  
+  .grid {
+    gap: 16px;
+  }
+  
+  .card {
+    padding: 16px;
+  }
+  
+  .emoji {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+  
+  .projectTitle {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .projectDesc {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+  
+  .why {
+    font-size: 11px;
+    padding: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .tech {
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+  
+  .techTag {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+  
+  .viewLink {
+    font-size: 12px;
+  }
+  
+  .footer {
+    padding: 24px 16px;
+    font-size: 14px;
   }
 }
 

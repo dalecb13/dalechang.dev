@@ -74,9 +74,22 @@
   animation: slideUp 0.6s ease-out;
 }
 
+.avatarWrapper {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 24px;
+  border: 3px solid var(--card-border);
+  background: var(--card-bg);
+  position: relative;
+}
+
 .avatar {
-  font-size: 64px;
-  margin-bottom: 24px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .title {
@@ -221,23 +234,179 @@
 /* Responsive */
 @media (max-width: 768px) {
   .nav {
-    padding: 20px 24px;
+    padding: 16px 20px;
+    flex-wrap: wrap;
+  }
+  
+  .navLogo {
+    font-size: 20px;
   }
   
   .navLinks {
-    gap: 16px;
+    gap: 12px;
+    font-size: 13px;
+  }
+  
+  .navCta {
+    padding: 8px 16px;
+    font-size: 13px;
   }
   
   .main {
-    padding: 40px 24px 60px;
+    padding: 32px 20px 48px;
+  }
+  
+  .avatarWrapper {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    font-size: clamp(28px, 8vw, 36px);
+    margin-bottom: 24px;
+  }
+  
+  .bio {
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  
+  .bio p {
+    font-size: 15px;
   }
   
   .values {
-    padding: 24px;
+    padding: 20px;
+    margin-bottom: 40px;
+    gap: 16px;
+  }
+  
+  .valueIcon {
+    font-size: 20px;
+  }
+  
+  .value h3 {
+    font-size: 15px;
+  }
+  
+  .value p {
+    font-size: 13px;
   }
   
   .cta {
-    padding: 32px 24px;
+    padding: 28px 20px;
+    margin-bottom: 32px;
+  }
+  
+  .cta h2 {
+    font-size: 24px;
+  }
+  
+  .cta p {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+  
+  .ctaBtn {
+    padding: 14px 28px;
+    font-size: 15px;
+  }
+  
+  .socials {
+    gap: 24px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    padding: 16px;
+  }
+  
+  .navLinks {
+    gap: 10px;
+    font-size: 12px;
+  }
+  
+  .navCta {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+  
+  .main {
+    padding: 24px 16px 40px;
+  }
+  
+  .avatarWrapper {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 16px;
+  }
+  
+  .title {
+    font-size: clamp(24px, 10vw, 28px);
+    margin-bottom: 20px;
+  }
+  
+  .bio {
+    gap: 14px;
+    margin-bottom: 28px;
+  }
+  
+  .bio p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  
+  .values {
+    padding: 16px;
+    margin-bottom: 32px;
+    gap: 14px;
+  }
+  
+  .value {
+    gap: 12px;
+  }
+  
+  .valueIcon {
+    font-size: 18px;
+  }
+  
+  .value h3 {
+    font-size: 14px;
+  }
+  
+  .value p {
+    font-size: 12px;
+  }
+  
+  .cta {
+    padding: 24px 16px;
+    margin-bottom: 28px;
+  }
+  
+  .cta h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .cta p {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+  
+  .ctaBtn {
+    padding: 12px 24px;
+    font-size: 14px;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .socials {
+    gap: 20px;
+    font-size: 12px;
+    flex-wrap: wrap;
   }
 }
 

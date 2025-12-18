@@ -29,6 +29,24 @@ body {
   background: var(--background);
   line-height: 1.6;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Improve touch targets on mobile */
+button,
+a {
+  touch-action: manipulation;
+}
+
+/* Ensure minimum touch target size */
+@media (max-width: 768px) {
+  button,
+  a {
+    min-height: 44px;
+    min-width: 44px;
+  }
 }
 
 a {

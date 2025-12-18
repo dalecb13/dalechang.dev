@@ -69,11 +69,13 @@ export default function Home() {
       <section className={styles.socialProof}>
         <p className={styles.proofLabel}>Previously shipped at</p>
         <div className={styles.proofLogos}>
-          <span>Company A</span>
+          <span>SAIC</span>
           <span>•</span>
-          <span>Company B</span>
+          <span>Innovim</span>
           <span>•</span>
-          <span>Company C</span>
+          <span>Cigna</span>
+          <span>•</span>
+          <span>Leidos</span>
         </div>
       </section>
 

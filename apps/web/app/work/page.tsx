@@ -1,3 +1,4 @@
+import Navigation from "../components/Navigation";
 import Link from "next/link";
 import styles from "./page.module.css";
 
@@ -64,14 +65,7 @@ export default function Work() {
     <div className={styles.page}>
       <div className={styles.bgGrid} />
       
-      <nav className={styles.nav}>
-        <Link href="/" className={styles.navLogo}>dc.</Link>
-        <div className={styles.navLinks}>
-          <Link href="/work" className={styles.active}>Work</Link>
-          <Link href="/projects">Projects</Link>
-          <a href="mailto:hello@dalechang.dev" className={styles.navCta}>Let&apos;s chat</a>
-        </div>
-      </nav>
+      <Navigation />
 
       <main className={styles.main}>
         <header className={styles.header}>

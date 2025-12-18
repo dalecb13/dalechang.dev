@@ -16,49 +16,7 @@
   z-index: 0;
 }
 
-/* Navigation */
-.nav {
-  position: relative;
-  z-index: 10;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 24px 48px;
-}
-
-.navLogo {
-  font-family: var(--font-display);
-  font-size: 24px;
-  font-weight: 800;
-  color: var(--accent);
-}
-
-.navLinks {
-  display: flex;
-  gap: 32px;
-  align-items: center;
-  font-size: 14px;
-}
-
-.navLinks a {
-  opacity: 0.7;
-  transition: opacity 0.2s, color 0.2s;
-}
-
-.navLinks a:hover,
-.navLinks a.active {
-  opacity: 1;
-  color: var(--accent);
-}
-
-.navCta {
-  background: var(--accent);
-  color: var(--background) !important;
-  padding: 10px 20px;
-  border-radius: 100px;
-  font-weight: 700;
-  opacity: 1 !important;
-}
+/* Navigation styles moved to Navigation component */
 
 /* Main */
 .main {
@@ -219,24 +177,7 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .nav {
-    padding: 16px 20px;
-    flex-wrap: wrap;
-  }
-  
-  .navLogo {
-    font-size: 20px;
-  }
-  
-  .navLinks {
-    gap: 12px;
-    font-size: 13px;
-  }
-  
-  .navCta {
-    padding: 8px 16px;
-    font-size: 13px;
-  }
+  /* Navigation styles moved to Navigation component */
   
   .main {
     padding: 32px 20px;
@@ -299,19 +240,7 @@
 }
 
 @media (max-width: 480px) {
-  .nav {
-    padding: 16px;
-  }
-  
-  .navLinks {
-    gap: 10px;
-    font-size: 12px;
-  }
-  
-  .navCta {
-    padding: 8px 14px;
-    font-size: 12px;
-  }
+  /* Navigation styles moved to Navigation component */
   
   .main {
     padding: 24px 16px;

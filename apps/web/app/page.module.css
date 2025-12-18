@@ -29,55 +29,7 @@
   z-index: 0;
 }
 
-/* Navigation */
-.nav {
-  position: relative;
-  z-index: 10;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 24px 48px;
-  animation: slideUp 0.6s ease-out;
-}
-
-.navLogo {
-  font-family: var(--font-display);
-  font-size: 24px;
-  font-weight: 800;
-  color: var(--accent);
-}
-
-.navLinks {
-  display: flex;
-  gap: 32px;
-  align-items: center;
-  font-size: 14px;
-}
-
-.navLinks a {
-  opacity: 0.7;
-  transition: opacity 0.2s, color 0.2s;
-}
-
-.navLinks a:hover {
-  opacity: 1;
-  color: var(--accent);
-}
-
-.navCta {
-  background: var(--accent);
-  color: var(--background) !important;
-  padding: 10px 20px;
-  border-radius: 100px;
-  font-weight: 700;
-  opacity: 1 !important;
-  transition: transform 0.2s, box-shadow 0.2s !important;
-}
-
-.navCta:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(255, 107, 53, 0.3);
-}
+/* Navigation styles moved to Navigation component */
 
 /* Hero */
 .hero {
@@ -334,16 +286,25 @@
   .nav {
     padding: 16px 20px;
     flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+  }
+  
+  .navLogo {
+    flex-shrink: 0;
   }
   
   .navLinks {
     gap: 12px;
     font-size: 13px;
+    flex-wrap: wrap;
+    align-items: center;
   }
   
   .navCta {
     padding: 8px 16px;
     font-size: 13px;
+    flex-shrink: 0;
   }
   
   .heroTitle {
@@ -390,23 +351,7 @@
 }
 
 @media (max-width: 480px) {
-  .nav {
-    padding: 16px;
-  }
-  
-  .navLogo {
-    font-size: 20px;
-  }
-  
-  .navLinks {
-    gap: 10px;
-    font-size: 12px;
-  }
-  
-  .navCta {
-    padding: 8px 14px;
-    font-size: 12px;
-  }
+  /* Navigation styles moved to Navigation component */
   
   .hero {
     padding: 24px 16px;

@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Navigation from "../components/Navigation";
 import styles from "./page.module.css";
 
 const projects = [
@@ -47,15 +47,15 @@ const projects = [
         link: "https://mindlab.cs.umd.edu/",
         emoji: "🧠",
     },
-    // {
-    //     id: 6,
-    //     title: "Iyagi",
-    //     description: "A child-friendly and parent-trusted content platform for teaching children about various real-world issues.",
-    //     why: "Many parents give their children iPads to keep them entertained, but there is no easy way for them to find content that is appropriate for their age and interests.",
-    //     tech: ["TypeScript", "Next.js", "iOS", "GitHub"],
-    //     link: "https://github.com/dalecb13/iyagi",
-    //     emoji: "👦",
-    // }
+    {
+        id: 6,
+        title: "VS Code Extension for Spaced Repetition",
+        description: "An extension for VS Code that helps you learn new things by reviewing them at spaced intervals.",
+        why: "Studying for interviews requires knowing a lot of information, both applied and theoretical. I wanted to create a free tool that I would use myself.",
+        tech: ["TypeScript", "VSCode", "GitHub"],
+        link: "https://github.com/dalecb13/coding-repetition",
+        emoji: "💻",
+    }
 ];
 
 export default function Projects() {
@@ -63,14 +63,7 @@ export default function Projects() {
     <div className={styles.page}>
       <div className={styles.bgGrid} />
       
-      <nav className={styles.nav}>
-        <Link href="/" className={styles.navLogo}>dc.</Link>
-        <div className={styles.navLinks}>
-          <Link href="/work">Work</Link>
-          <Link href="/projects" className={styles.active}>Projects</Link>
-          <a href="mailto:hello@dalechang.dev" className={styles.navCta}>Let&apos;s chat</a>
-        </div>
-      </nav>
+      <Navigation />
 
       <main className={styles.main}>
         <header className={styles.header}>

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import Navigation from "./components/Navigation";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -10,14 +11,7 @@ export default function Home() {
       <div className={styles.bgGradient} />
       
       {/* Navigation */}
-      <nav className={styles.nav}>
-        <span className={styles.navLogo}>dc.</span>
-        <div className={styles.navLinks}>
-          <Link href="/work">Work</Link>
-          <Link href="/projects">Projects</Link>
-          <a href="mailto:hello@dalechang.dev" className={styles.navCta}>Let&apos;s chat</a>
-        </div>
-      </nav>
+      <Navigation />
 
       {/* Hero Section */}
       <main className={styles.hero}>
@@ -93,9 +87,8 @@ export default function Home() {
       {/* Footer */}
       <footer className={styles.footer}>
         <div className={styles.footerLinks}>
-          <a href="https://github.com/dalechang" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://linkedin.com/in/dalechang" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="https://twitter.com/dalechang" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a href="https://linkedin.com/in/dalechangdev" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/dalecb13" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
         <p className={styles.footerNote}>Built with care & caffeine ☕</p>
       </footer>

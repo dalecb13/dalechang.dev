@@ -1,4 +1,5 @@
 import Navigation from "../components/Navigation";
+import Image from "next/image";
 import styles from "./page.module.css";
 
 const projects = [
@@ -9,7 +10,7 @@ const projects = [
         why: "Wanted to stop asking 'where should we eat?' and actually find a place to eat.",
         tech: ["Next.js", "React Native", "Expo", "Vercel", "Supabase", "TripAdvisor API", "Stripe", "Postgres", "Cursor", "LLMs", "AI", "GitHub"],
         link: "https://mukja.app",
-        emoji: "🍜",
+        image: null,
     },
     {
         id: 2,
@@ -18,7 +19,7 @@ const projects = [
         why: "I needed a simpler alternative to complex budgeting apps.",
         tech: ["Next.js", "React", "TypeScript", "Vercel", "Cursor", "LLMs", "AI", "GitHub"],
         link: "https://dalechang.me",
-        emoji: "👋",
+        image: null,
     },
     {
         id: 3,
@@ -27,7 +28,7 @@ const projects = [
         why: "Finding a therapist is hard. I wanted to make it easier for clients to find her.",
         tech: ["Next.js", "React", "TypeScript", "Vercel", "Cursor", "LLMs", "AI", "GitHub"],
         link: "https://hannahtherapy.oneline",
-        emoji: "👩‍⚕️",
+        image: null,
     },
     {
         id: 4,
@@ -36,7 +37,7 @@ const projects = [
         why: "Built this for my wife for Valentine's Day 2024.",
         tech: ["iOS", "Swift", "GitHub", "Docker", "Apple Store"],
         link: "https://github.com/dalecb13/kikis-adventure",
-        emoji: "👻",
+        image: "/kikis-scavenger-hunt.png",
     },
     {
         id: 5,
@@ -45,7 +46,7 @@ const projects = [
         why: "Students at the University of Maryland do not have easy access to industry-standard software development tools, environments, and practices.",
         tech: ["JavaScript", "Gatsby", "React", "TypeScript", "GitLab"],
         link: "https://mindlab.cs.umd.edu/",
-        emoji: "🧠",
+        image: null,
     },
     {
         id: 6,
@@ -54,7 +55,7 @@ const projects = [
         why: "Studying for interviews requires knowing a lot of information, both applied and theoretical. I wanted to create a free tool that I would use myself.",
         tech: ["TypeScript", "VSCode", "GitHub"],
         link: "https://github.com/dalecb13/coding-repetition",
-        emoji: "💻",
+        image: null,
     }
 ];
 
@@ -82,7 +83,17 @@ export default function Projects() {
               className={styles.card}
               style={{ animationDelay: `${index * 0.08}s` }}
             >
-              <span className={styles.emoji}>{project.emoji}</span>
+              {project.image && (
+                <div className={styles.imageContainer}>
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    width={200}
+                    height={200}
+                    className={styles.projectImage}
+                  />
+                </div>
+              )}
               
               <h2 className={styles.projectTitle}>{project.title}</h2>
               <p className={styles.projectDesc}>{project.description}</p>

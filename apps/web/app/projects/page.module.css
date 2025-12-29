@@ -72,9 +72,19 @@
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
-.emoji {
-  font-size: 40px;
+.imageContainer {
+  width: 100%;
+  height: 200px;
   margin-bottom: 16px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.projectImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .projectTitle {
@@ -204,8 +214,9 @@
     padding: 20px;
   }
   
-  .emoji {
-    font-size: 32px;
+  .imageContainer {
+    height: 160px;
+    margin-bottom: 12px;
   }
   
   .projectTitle {
@@ -267,8 +278,8 @@
     padding: 16px;
   }
   
-  .emoji {
-    font-size: 28px;
+  .imageContainer {
+    height: 140px;
     margin-bottom: 12px;
   }
   

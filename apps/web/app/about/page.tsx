@@ -118,8 +118,8 @@ export default function About() {
             <a href="https://linkedin.com/in/dalechang" target="_blank" rel="noopener noreferrer">
               LinkedIn
             </a>
-            <a href="https://twitter.com/dalechang" target="_blank" rel="noopener noreferrer">
-              Twitter
+            <a href="https://notes.dalechang.dev" target="_blank" rel="noopener noreferrer">
+              Notes
             </a>
           </div>
         </div>

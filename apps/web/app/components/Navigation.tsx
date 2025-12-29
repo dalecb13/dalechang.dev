@@ -37,7 +37,7 @@ export default function Navigation() {
         <Link href="/" className={styles.navLogo} onClick={closeMenu}>
           dc.
         </Link>
-        
+
         <button
           className={`${styles.menuButton} ${isMenuOpen ? styles.menuOpen : ""}`}
           onClick={toggleMenu}
@@ -49,7 +49,16 @@ export default function Navigation() {
           <span></span>
         </button>
 
-        <div className={`${styles.navLinks} ${isMenuOpen ? styles.menuOpen : ""}`}>
+        <div
+          className={`${styles.navLinks} ${isMenuOpen ? styles.menuOpen : ""}`}
+        >
+          <Link
+            href="/about"
+            className={pathname === "/about" ? styles.active : ""}
+            onClick={closeMenu}
+          >
+            About
+          </Link>
           <Link
             href="/work"
             className={pathname === "/work" ? styles.active : ""}
@@ -64,15 +73,16 @@ export default function Navigation() {
           >
             Projects
           </Link>
-          <a href="mailto:dale@dalechang.dev" className={styles.navCta} onClick={closeMenu}>
+          <a
+            href="mailto:dale@dalechang.dev"
+            className={styles.navCta}
+            onClick={closeMenu}
+          >
             Let&apos;s chat
           </a>
         </div>
       </nav>
-      {isMenuOpen && (
-        <div className={styles.backdrop} onClick={closeMenu} />
-      )}
+      {isMenuOpen && <div className={styles.backdrop} onClick={closeMenu} />}
     </>
   );
 }
-

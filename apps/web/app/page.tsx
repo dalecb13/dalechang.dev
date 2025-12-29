@@ -88,9 +88,9 @@ export default function Home() {
       <footer className={styles.footer}>
         <div className={styles.footerLinks}>
             <a href="https://linkedin.com/in/dalechangdev" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="https://github.com/dalecb13" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://github.com/dalecb13" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
-        <p className={styles.footerNote}>Built with care & caffeine ☕</p>
+        <p className={styles.footerNote}>Built with care & <a href="https://www.buymeacoffee.com/dalechangdev" target="_blank" rel="noopener noreferrer">caffeine</a> ☕</p>
       </footer>
     </div>
   );

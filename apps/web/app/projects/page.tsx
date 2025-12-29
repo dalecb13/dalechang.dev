@@ -46,7 +46,7 @@ const projects = [
         why: "Students at the University of Maryland do not have easy access to industry-standard software development tools, environments, and practices.",
         tech: ["JavaScript", "Gatsby", "React", "TypeScript", "GitLab"],
         link: "https://mindlab.cs.umd.edu/",
-        image: null,
+        image: "/mindlab-website.png",
     },
     {
         id: 6,

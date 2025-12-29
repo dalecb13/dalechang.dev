@@ -1,5 +1,4 @@
 import Navigation from "../components/Navigation";
-import Link from "next/link";
 import Image from "next/image";
 import styles from "./page.module.css";
 
@@ -76,6 +75,40 @@ export default function About() {
               Start a conversation
               <span className={styles.arrow}>→</span>
             </a>
+          </div>
+
+          <div className={styles.coffee}>
+            <div className={styles.coffeeContent}>
+              <div className={styles.coffeeText}>
+                <h2>Support my work</h2>
+                <p>
+                  If you enjoy my content or find my projects helpful, consider buying me a coffee.
+                </p>
+                <a 
+                  href="https://buymeacoffee.com/dalechangdev" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className={styles.coffeeBtn}
+                >
+                  Buy me a coffee
+                  <span className={styles.arrow}>→</span>
+                </a>
+              </div>
+              <a 
+                href="https://buymeacoffee.com/dalechangdev" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className={styles.coffeeLink}
+              >
+                <Image
+                  src="/buy-dale-a-coffee-qr-code.png"
+                  alt="Buy me a coffee QR code"
+                  width={240}
+                  height={240}
+                  className={styles.coffeeQr}
+                />
+              </a>
+            </div>
           </div>
 
           <div className={styles.socials}>

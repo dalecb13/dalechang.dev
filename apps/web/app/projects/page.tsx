@@ -10,15 +10,15 @@ const projects = [
         why: "Wanted to stop asking 'where should we eat?' and actually find a place to eat.",
         tech: ["Next.js", "React Native", "Expo", "Vercel", "Supabase", "TripAdvisor API", "Stripe", "Postgres", "Cursor", "LLMs", "AI", "GitHub"],
         link: "https://mukja.app",
-        image: null,
+        image: "/mukja-app-screenshot.png",
     },
     {
         id: 2,
-        title: "dalechang.me",
+        title: "dalechang.dev",
         description: "This website you're on right now. Built because I wanted a simple way to share my work and projects.",
         why: "I needed a simpler alternative to complex budgeting apps.",
         tech: ["Next.js", "React", "TypeScript", "Vercel", "Cursor", "LLMs", "AI", "GitHub"],
-        link: "https://dalechang.me",
+        link: "https://dalechang.dev",
         image: null,
     },
     {
@@ -27,7 +27,7 @@ const projects = [
         description: "A website for a therapist to help her clients understand options for therapy and to schedule consultations.",
         why: "Finding a therapist is hard. I wanted to make it easier for clients to find her.",
         tech: ["Next.js", "React", "TypeScript", "Vercel", "Cursor", "LLMs", "AI", "GitHub"],
-        link: "https://hannahtherapy.oneline",
+        link: "https://hannahtherapy.online",
         image: null,
     },
     {

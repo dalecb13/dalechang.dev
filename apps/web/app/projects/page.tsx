@@ -28,7 +28,7 @@ const projects = [
         why: "Finding a therapist is hard. I wanted to make it easier for clients to find her.",
         tech: ["Next.js", "React", "TypeScript", "Vercel", "Cursor", "LLMs", "AI", "GitHub"],
         link: "https://hannahtherapy.online",
-        image: null,
+        image: "/hannahtherapy-hero.png",
     },
     {
         id: 4,

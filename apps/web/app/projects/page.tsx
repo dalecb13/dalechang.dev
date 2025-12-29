@@ -107,7 +107,7 @@ export default function Projects() {
 
       <footer className={styles.footer}>
         <p>Have an idea? Let&apos;s build something together.</p>
-        <a href="mailto:hello@dalechang.dev" className={styles.footerCta}>
+        <a href="mailto:dale@dalechang.dev" className={styles.footerCta}>
           Get in touch →
         </a>
       </footer>

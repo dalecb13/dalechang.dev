@@ -122,7 +122,7 @@ export default function Work() {
 
       <footer className={styles.footer}>
         <p>Want to create impact together?</p>
-        <a href="mailto:hello@dalechang.dev" className={styles.footerCta}>
+        <a href="mailto:dale@dalechang.dev" className={styles.footerCta}>
           Let&apos;s chat →
         </a>
       </footer>

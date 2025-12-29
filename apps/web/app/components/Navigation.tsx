@@ -64,7 +64,7 @@ export default function Navigation() {
           >
             Projects
           </Link>
-          <a href="mailto:hello@dalechang.dev" className={styles.navCta} onClick={closeMenu}>
+          <a href="mailto:dale@dalechang.dev" className={styles.navCta} onClick={closeMenu}>
             Let&apos;s chat
           </a>
         </div>

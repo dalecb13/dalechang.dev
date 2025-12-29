@@ -34,7 +34,7 @@ export default function Home() {
           </p>
 
           <div className={styles.heroCtas}>
-            <a href="mailto:hello@dalechang.dev" className={styles.primaryBtn}>
+            <a href="mailto:dale@dalechang.dev" className={styles.primaryBtn}>
               Let&apos;s chat
               <span className={styles.btnArrow}>→</span>
             </a>

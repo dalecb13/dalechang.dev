@@ -72,7 +72,7 @@ export default function About() {
               Whether you have a project in mind, want to collaborate, or just want to say hi—
               I&apos;d love to hear from you.
             </p>
-            <a href="mailto:hello@dalechang.dev" className={styles.ctaBtn}>
+            <a href="mailto:dale@dalechang.dev" className={styles.ctaBtn}>
               Start a conversation
               <span className={styles.arrow}>→</span>
             </a>
